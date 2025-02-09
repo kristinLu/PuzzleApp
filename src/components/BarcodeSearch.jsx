@@ -18,7 +18,7 @@ function BarcodeSearch({ setActiveTab }) {
   const findPuzzles = async () => {
     //const proxyurl = 'https://wry-grizzly-donkey.glitch.me/';
     //const url = `${proxyurl}https://api.barcodelookup.com/v3/products?barcode=${keyword}&formatted=y&key=${apikey}`;
-    const apikey = 'emorfgbor22rcmz8yvyal303dgbu6m';
+    const apikey = process.env.PUZZLE_APP_BARCODE_API_KEY;
     const url = `https://api.barcodelookup.com/v3/products?barcode=${keyword}&formatted=y&key=${apikey}`;
     if (keyword !== '') {
       setError(false);
