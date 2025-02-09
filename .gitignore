@@ -8,6 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 !public/index.html
+!public/pieces.png
+!public/puzzle.jpg
+!public/puzzle.png
+puzzle-back/images/*
 
 node_modules
 build
